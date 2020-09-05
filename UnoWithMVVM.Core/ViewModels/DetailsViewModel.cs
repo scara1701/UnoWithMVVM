@@ -23,7 +23,9 @@ namespace UnoWithMVVM.Core.ViewModels
 
         public List<MyObject> TheList
         {
-            get { return ListService.MyObjects(_getNumberService); }
+            get { 
+                return ListService.MyObjects(_getNumberService); 
+            }
         }
 
         private void GoBack()

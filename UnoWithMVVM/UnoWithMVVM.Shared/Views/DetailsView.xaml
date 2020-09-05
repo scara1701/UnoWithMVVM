@@ -6,10 +6,17 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <StackPanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Button Command="{Binding GoBackCommand}" Content="Go Back" />
-        <!--<controls:DataGrid ItemsSource="{Binding TheList}" AutoGenerateColumns="True" />-->
+        <controls:DataGrid ItemsSource="{Binding TheList}" 
+                           AutoGenerateColumns="True" 
+                           VerticalAlignment="Stretch"
+						   HorizontalAlignment="Stretch"
+						   HorizontalScrollBarVisibility="Visible"
+						   VerticalScrollBarVisibility="Visible"
+                           />
     </StackPanel>
 </Page>
